@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class exo3 {
+public class exercice3 {
     public static void main(String[]args) {
         int a ;
         int b;
