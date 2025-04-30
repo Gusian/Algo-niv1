@@ -43,12 +43,18 @@ public class exercice9 {
         String vmdp;
         if(va.equals(a)){
             cva="Renseignez votre mot de passe : ";
-            /*System.out.print("");
-            vmdp=clavier.next();*/ 
+            System.out.println(cva);
+            vmdp=clavier.next(); 
+            if(vmdp.equals(mdp)){
+                System.out.println("Connexion réussi !");
+            }else{
+                System.out.println("Mot de passe incorrect !");
+            }
         }else{
             cva="adresse incorrecte";
         }
-        System.out.println(cva);
+        
+        
 
         
         clavier.close();
