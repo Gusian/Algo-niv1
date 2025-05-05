@@ -13,20 +13,19 @@ public class exercice12 {
         
         System.out.print("Votre prix ? ");
         
-        p=clavier.nextDouble();
+        p=clavier.nextFloat();
 
        
-        System.out.print("Votre réduction (en pourcentage %) ?")
+        System.out.print("Votre réduction (en pourcentage %) ?");
 
         r=clavier.nextInt();
 
-       
-        s=p-(p*(r/100));
+        s=p-(p*r/100);
 
        
         System.out.print("Prix après réduction de "+r+"% :");
         
-        System.out.print(s);
+        System.out.print(s+" euros");
         
         clavier.close();
     }

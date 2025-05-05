@@ -4,7 +4,7 @@ public class exercice13 {
 
     public static void main(String[]args) {
 
-        int c;
+        float c;
         
         float m;
 
@@ -13,11 +13,11 @@ public class exercice13 {
         
         System.out.print("Donner une taille en centimètre ?");
 
-        c=clavier.nextInt();
+        c=clavier.nextFloat();
         
         m=c/100;
 
-        System.out.print(c+" cm vaut "+m);
+        System.out.print(c+" cm vaut "+m+"m");
 
         clavier.close();
     }

@@ -8,7 +8,7 @@ public class exercice11 {
         System.out.print("Bonjour, vous avez "+arg+" euros: Combien voulez vous retirer ?");
         rarg=clavier.nextInt();
         String m;
-        if(arg<rarg){
+        if(arg>rarg){
             m="l'argent a bien été retiré de votre compte";
         }else{
             m="fond insuffisant !";

@@ -4,13 +4,13 @@ public class exercice14 {
 
     public static void main(String[]args) {
         
-        bool A;
+        Boolean A;
         
-        bool B;
+        Boolean B;
 
-        bool C;
+        Boolean C;
 
-        bool ea;
+        Boolean ea;
 
         Scanner clavier = new Scanner(System.in);
         

@@ -1,3 +1,5 @@
+/*import java.math.BigDecimal;
+import java.math.RoundingMode;*/
 import java.util.Scanner;
 
 public class exercice15 {
@@ -8,15 +10,17 @@ public class exercice15 {
 
        String cdevise;
        
-        float arg;
+        double arg;
 
-        float carg;
+        double carg;
+
+        double aarg;
 
 
         Scanner clavier = new Scanner(System.in);
         
         
-        System.out.print("Quel est votre monnaie ?");
+        System.out.print("Quel est votre device ?");
         
         devise=clavier.next();
 
@@ -31,16 +35,53 @@ public class exercice15 {
         cdevise=clavier.next();
 
 
-        if(devise="EUR"&&cdevise=USD){
+        if(devise.equals("EUR") && cdevise.equals("USD")){
 
-            carg=arg*1,1422	;
+            carg=arg*1.1422	;
 
-        }else if(devise="EUR"&&cdevise="GBP"{
+        }else if(devise.equals("EUR")&&cdevise.equals("GBP")){
 
-            carg=
+            carg=arg*0.8516	;
 
+        }else if (devise.equals("USD")&&cdevise.equals("EUR")){
+
+            carg=arg*0.8845 ;
+
+        }else if (devise.equals("USD")&&cdevise.equals("GBP")){
+
+            carg=arg*0.7534 ;
+
+        }else if (devise.equals("GBP")&&cdevise.equals("EUR")){
+
+            carg=arg*1.1746 ;
+
+        }else if (devise.equals("GBP")&&cdevise.equals("USD")){
+
+            carg=arg*1.3268 ;
+
+        }else{
+
+            System.out.print("Données invalides");
+            carg=0;
+        }
+
+        carg=Math.round(carg*100);
+
+        carg=carg/100;
+
+        
+        if(devise.equals("EUR")||devise.equals("USD")||devise.equals("GBP")){
+        
+            System.out.println("Votre montant de "+arg+devise+" vaut "+carg+cdevise);
+
+        }else{
+
+            System.out.println("");
 
         }
+        clavier.close();
+    }
+}
 
 
 
