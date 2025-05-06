@@ -22,6 +22,10 @@ public class exercice12 {
 
         s=p-(p*r/100);
 
+        s=Math.round(s*100);
+
+        s=s/100;
+
        
         System.out.print("Prix après réduction de "+r+"% :");
         

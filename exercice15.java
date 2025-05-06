@@ -14,9 +14,6 @@ public class exercice15 {
 
         double carg;
 
-        double aarg;
-
-
         Scanner clavier = new Scanner(System.in);
         
         
@@ -30,7 +27,7 @@ public class exercice15 {
         arg=clavier.nextDouble();
 
         
-        System.out.print("Vous voulez la convertir en quelle devise ?");
+        System.out.print("Vous voulez la convertir en quelle devise ? (EUR/USD/GBP)");
 
         cdevise=clavier.next();
 

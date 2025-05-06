@@ -20,7 +20,7 @@ public class exercice18 {
 
       pret=clavier.nextInt();
 
-      System.out.println("Etes vous en CDI ?");
+      System.out.println("Etes vous en CDI (oui/non) ?");
       
       cdi=clavier.next();
 
@@ -38,8 +38,45 @@ public class exercice18 {
 
       }else if(pret<=app*4){
 
-         System.out.println("Possédez vous une autre propriété ?");
+         System.out.println("Possédez vous une autre propriété (oui/non) ?");
+         
+         prop=clavier.next();
+         
+         if(prop.equals("oui")){
+
+            System.out.println("Quel est la valeur de cette propriété ?");
+
+            pprop=clavier.nextFloat();
+
+            if (pret*0.75<=pprop){
+
+               System.out.println("Vous pouvez obtenir un prêt !");
+            
+            }else{
+
+               System.out.println("Vous ne pouvez pas hélas obtenir de prêt !");
+
+            }
+
+         }else{
+
+            pprop=0;
+
+            System.out.println("Vous ne pouvez pas hélas obtenir de prêt !");
+
+         }
+
+      }else{
+
+         prop="";
+
+         pprop=0;
+
+         System.out.println("Vous ne pouvez pas hélas obtenir de prêt !");
+
       }
+
+      clavier.close();
    }
 }
 
