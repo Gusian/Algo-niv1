@@ -1,3 +1,64 @@
+import java.util.Scanner;
+
+public class exercice20 {
+
+    public static void main(String[]args) {
+
+        int ji;
+        int ve;
+        int vb;
+
+        Scanner clavier = new Scanner(System.in);
+
+            System.out.println("Combien de gens on voté pour Joseline Inutile ?");
+
+            ji=clavier.nextInt();
+
+            
+            System.out.println("Combien de gens on voté pour Vincent Escreau ?");
+
+            ve=clavier.nextInt();
+
+            vb=150000-(ji+ve);
+
+            if(vb>=0){
+
+                ji=ji*100/(150000-vb);
+
+                ve=ve*100/(150000-vb);
+
+                System.out.println("Vous avez "+vb+" d'abstentions, ils seront comptés nuls.");
+
+                if(ve>=60){
+
+                    System.out.println("Vincent Escreau est le nouveau maire de Mulhouse !");
+
+                }else if(ji>=60){
+
+                    System.out.println("Joseline Inutile est la nouvelle maire de Mulhouse !");
+
+                }else{
+
+
+                    System.out.println("le/la gagnant(e) n'ayant pas atteint 60% des votes: un second tour sera organisé !");
+
+                }
+
+                    
+
+                }else{
+
+                    System.out.println("Erreur: Le nombre de votes excède celuis des votants");
+
+                }
+
+                clavier.close();
+
+            }
+    }
+
+
+
 /* EXO20 : Avec PRINT & SCANNER : 
  * 
  * Vous allez créer un algo de sondage pour des élections, 
